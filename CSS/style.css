@@ -1,91 +1,92 @@
+/* General classes for page */
 
 body {
-  background-color: rgb(240, 244, 245);
+  background-image: url("../images/grid.jpg");
+  font-family: 'Open Sans';
 }
 
-#container {
-  margin: 0 auto;
-  width: 720px;
-   font-family: 'Open Sans', sans-serif;
-   text-align: center;
+
+/* Footer */
+
+#footer {
+  background-color: #222;
+  color: #aaaaaa;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-.achievement{
-  text-align: left;
-  background-color: #fff;
-  margin: 20px auto;
-  padding: 30px;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+#footer a {
+  color: #cccccc;
 }
 
-#nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#footer a:hover {
+  color: white;
 }
 
-#nav > li {
-  display: inline;
-  padding: 2em;
+.social a {
+  font-size: 24px;
 }
 
-#nav > li > a {
+.social a:hover {
   text-decoration: none;
-  color: orange;
-  font-weight: 700;
 }
 
+/* Lead with big image */
 
-h1{
-	font-family: Open Sans;
-	color: white;
-  font-size: 72px;
-}
-
-h2{
-	color:white;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-a{
-	color: rgb(0,0,0);
-	text-decoration: none;
-}
-
-a:hover {
-text-decoration: underline
-}
-
-img{
-	border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0px 0px 1px black;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-}
-
-img:hover{
-  transform: rotate(10deg) scale(1.1);
-  -webkit-transform: rotate(10deg) scale(1.1);
-}
-
-#wrapper{
-  background-image: url("../images/background/background.jpg");
-  height: 550px;
-  background-repeat: no-repeat;
+.wrapper {
+  background-image: url('../images/background/background.jpg');
+  height: 650px;
   background-size: cover;
-  text-align: center;
   padding-top: 150px;
-  color:white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
 }
 
-.spacer{
+.lead h1 {
+  font-size: 72px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+  font-weight: normal;
+}
+
+.lead h2 {
+  background: rgba(0, 0, 0, .4);
+  display: inline-block;
+  padding: 0.2em;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+
+/* Vertical spacer to help content breathe */
+
+.vertical-spacer {
   height: 8em;
 }
 
+/* Some padding for feature images */
+
+.feature img {
+  margin-bottom: 2em;
+}
+
+.feature {
+  color: #444444;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* How to override the default Bootstrap colors */
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
 
 /* How to override the default Bootstrap navbar */
 
@@ -96,9 +97,11 @@ img:hover{
 .navbar-transparent .navbar-brand,
 .navbar-transparent .navbar-nav > li > a {
   color: #eeeeee;
-  line-height: 50px;
 }
 
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus,
 .navbar-transparent .navbar-nav > li > a:hover,
 .navbar-transparent .navbar-nav > li > a:active,
 .navbar-transparent .navbar-nav > li > a:focus,
@@ -109,8 +112,9 @@ img:hover{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.navbar-transparent .navbar-brand:hover,
-.navbar-transparent .navbar-brand:active,
-.navbar-transparent .navbar-brand:focus {
-  color: white;
+/* Maps display */
+
+#map{
+  width: 100%;
+  height: 400px;
 }
